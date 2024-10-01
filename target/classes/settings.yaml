@@ -1,0 +1,5 @@
+input_file: "src/main/resources/sample_short.log"
+
+filter_request:
+    "sequence as 
+         (PAYLOAD ~ 'Fetching request') then (LOG_LEVEL == prev.LOG_LEVEL)"
